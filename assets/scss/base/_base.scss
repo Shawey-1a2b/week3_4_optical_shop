@@ -1,0 +1,43 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Noto Sans TC", Roboto, sans-serif;
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul li, ol li{
+    list-style: none;
+    padding-left: 0;
+}
+.container {
+    /* 桌機 */
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+    /* 平板 */
+    @media (max-width: 768px) {
+        max-width: 720px;
+    }
+    /* 手機過渡 */
+    // @media (max-width: 425px) {
+    //     max-width: 424px;
+    // }
+    /* 手機 */
+    @media (max-width: 375px) {
+        max-width: 372px;
+    }
+}
+.dev-check{  /*檢查用*/
+    *, *::before, *::after{
+        outline: 1px solid #ddd;
+    }
+}

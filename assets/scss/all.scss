@@ -1,0 +1,23 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+/* 客製化BS5 變數*/
+@import './utils/variables';
+/* 載入BS5所有 scss*/
+@import "../../node_modules/bootstrap";
+
+
+/* 載入外部字體 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@0,400;1,900&display=swap");
+
+/* 變數及基礎 */
+// @import './base/reset';
+@import './base/base';
+@import './utils/utilities';
+
+/* layouts佈局 */
+@import './layout/header';
+@import './layout/footer';
+
+/* 頁面樣式 */ 
+@import './pages/index';
+@import './pages/faq';
