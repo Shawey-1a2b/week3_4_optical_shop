@@ -1,0 +1,77 @@
+.product-nav-list{
+  max-width: 100%;
+}
+.product-nav-item{
+  height: auto;
+  border: 1px solid #DCDCDC;
+  padding: 16px 12px;
+  &.active{
+    border-bottom: 8px solid $primary;
+  }
+  & a:hover{
+    color: $gold;
+  }
+
+  padding: 16px 12px;
+  font-size: 16px;
+  @media(min-width: 768px){
+    font-size: 24px;
+  }
+  @media(min-width: 992px){
+    font-size: 32px;
+  }
+}
+.product-title{
+  h1, h2{
+    font-size: 24px;
+  }
+  @media(min-width: 768px){
+    h2{
+      font-size: 42px;
+    }
+    h1{
+      font-size: 32px;
+    }
+  }
+}
+
+.color-brown{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  &-darker{
+    background: #5F3E2D;
+  }
+  &-lighter{
+    background: #B75929;
+  }
+}
+/* 底部換頁 */
+.product-pagination{
+  max-width: 100%;
+}
+.pagination {
+  display: flex;
+  list-style: none;
+  --bs-pagination-border-radius: 0px;
+  --bs-pagination-disabled-bg: #F2F2F2;
+}
+.page {
+  &-link {
+    font-size: 16px;
+    padding: 12px 15px;
+      @media(min-width:768px){
+        font-size: 18px;
+        padding: 12px 16px;
+      }
+    color: #555555;
+    position: relative;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+  }
+}
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #000000;
+}
